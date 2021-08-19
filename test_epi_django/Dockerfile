@@ -24,8 +24,8 @@ RUN /bin/sh ./install-instantclient.sh
 RUN pip install -r requirements.txt
 
 WORKDIR /code
-COPY scripts/start.sh /
+COPY scripts/start.sh /code/
 COPY . /code/
 
-RUN chmod +x ./start.sh
+RUN chmod +x /code/start.sh
 
