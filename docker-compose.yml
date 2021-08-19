@@ -14,7 +14,6 @@ services:
     container_name: backend
     build:
       context: ./test_epi_django
-    command: /start.sh
     volumes:
       - .:/code
     ports:
@@ -26,6 +25,8 @@ services:
     build:
       context: ./test_epi_vue
       target: development
+    volumes:
+      - .:/app
     ports:
       - 8080:8080
     depends_on:
