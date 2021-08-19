@@ -26,8 +26,6 @@ services:
     build:
       context: ./test_epi_vue
       target: development
-    volumes:
-      - ./test_epi_vue/src:/app/src
     ports:
       - 8080:8080
     depends_on:

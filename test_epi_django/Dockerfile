@@ -27,5 +27,5 @@ WORKDIR /code
 COPY scripts/start.sh /
 COPY . /code/
 
-RUN chmod +x scripts/start.sh
+RUN chmod +x ./start.sh
 
